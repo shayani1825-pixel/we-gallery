@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Polaris S</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style type="text/css">
+    @import url("maincss.css");
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>Polaris Studio</h1>
+    <p>Creative Developer  and Visual Artist</p>
+    <a href="#portfolio" class="btn"> portfolio</a>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <h2>We Gallery</h2>
+    <div class="grid">
+        <img src="file:///G:/picture/2026/ChatGPT%20Image%20Jan%2031,%202026,%2012_55_42%20PM.png" onclick="openModal(this.src)">
+        <img src="../ChatGPT Image Jan 31, 2026, 01_15_41 PM.png" onclick="openModal(this.src)">
+        <img src="../photo_2026-02-07_21-09-11.jpg" onclick="openModal(this.src)">
+        <img src="../photo_2026-02-22_18-17-47.jpg" onclick="openModal(this.src)">
+    </div>
+</section>
+
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        Im a graphic designer and web devaloper,My focus is on modern,minimal,and professional design.
+    </p>
+</section>
+
+<section class="contact">
+    <h2>contact me</h2>
+    <p>shayani1825@gmail.com</p>
+</section>
+
+<footer>
+    © 2026 All Rights Reserved 2/24/2026--2:59
+</footer>
+
+<div class="modal" id="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+
+<script>
+function openModal(src){
+    document.getElementById("modal").style.display="flex";
+    document.getElementById("modalImg").src=src;
+}
+
+function closeModal(){
+    document.getElementById("modal").style.display="none";
+}
+</script>
+
+</body>
+</html>
